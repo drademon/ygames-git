@@ -1,3 +1,1 @@
-hi
-new
-file
+new str
