@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script>
+    const func_search = () => {
+    const operate = document.getElementById("operation_search").value;
+    window.location.href = `/pages/search/${operate}`;
+    }
+</script>
+{% endblock %}
+
+{% block content %}
+<input id="operation_search">
+<button onclick="func_search()">search</button><br>
+    {% for oper in operations %}
+        <span>{{ oper.date }}</span><br>
+        <span>{{ oper.type }}</span><br>
+    {% endfor %}
+{% endblock %}

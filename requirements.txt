@@ -7,7 +7,7 @@ anyio==3.7.1
 async-timeout==  4.0.3
 asyncpg== 0.29.0
 attrs ==  23.1.0
-backports.zoneinfo==  0.2.1
+backports.zoneinfo;python_version<"3.9"
 bcrypt ==  4.0.1
 billiard==  4.2.0
 blinker==  1.7.0
